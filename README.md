@@ -31,13 +31,17 @@ Hotkeys:
 Changelog:
 -----------------
 
-22 Sept, 2012
-Version 1.0 released
+7 August, 2014
+Version 1.2 released
+* Fixed slowness problem when typing to many terminals
 
 16 June, 2014
 Version 1.1 released
 * Added MinTTY support
 * Added Paste to all support
+
+22 Sept, 2012
+Version 1.0 released
 
 
 Features requested:
