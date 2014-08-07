@@ -1,7 +1,7 @@
 #NoEnv
 #Persistent
 #SingleInstance, Force
-SetKeyDelay, 1, 1
+SetKeyDelay, -1, -1
 
 If !A_IsCompiled
 	Menu, Tray, Icon, %A_ScriptDir%\terminal.ico
@@ -236,7 +236,7 @@ LoopPuTTY(Focus=0, CTRL=0, SHIFT=0)
 }
 #IfWinActive
 
-; Send to all PuTTY Windows Safely
+; Paste to all PuTTY Windows Safely
 Paste()
 {
 	If (A_IsSuspended==0)
