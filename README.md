@@ -8,6 +8,11 @@ Description:
 PuTTY Keystroke Sender is a tool that allows you to control all of your PuTTY terminal windows at the same time.  It allows you to type character-by-character in every window simultaneously.  Many Systems Administrators will recognize the value of needing to do the same thing to many servers at once.  You can even still use tab-complete or vim a file in interactive mode (which no other command sender can do).
 
 
+Download:
+------------------
+Go to the [Releases tab](https://github.com/deanhouseholder/PuTTY-Keystroke-Sender/releases).
+
+
 How to Run:
 -------------------
 
