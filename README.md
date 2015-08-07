@@ -55,10 +55,15 @@ Hotkeys:
 **CTRL+ALT+7** - Add PuTTY windows to group 7<br />
 **CTRL+ALT+8** - Add PuTTY windows to group 8<br />
 **CTRL+ALT+9** - Add PuTTY windows to group 9<br />
-
+**ALT+g** - Restart PuTTY Keystroke Sender (if it starts misbehaving)
 
 Changelog:
 -----------------
+
+7 August 2015<br />
+Version 2.1
+
+* Fixed: Restarts don't reset groups to 0.
 
 2 August 2015<br />
 Version 2.0 - The fork of the fork of this project :)
