@@ -1,3 +1,5 @@
+; TODO: when restarting, look at titles to determine previous groups
+
 ; Copyright (c) 2015 Dean Householder
 ;
 ; Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -237,8 +239,16 @@ RunTimerJobs()
 			}
 		}
 		if (match != 1) {
-			; No group assigned (new window opened or script just restarted) -> Assign to group 0
-			Cluster[CurWin] := 0
+			; No group assigned (new window opened or script just restarted)
+			WinGetTitle, Title, ahk_id %CurWin%
+			TitleGroupCheck := RegExMatch(Title, ".* \[([0-9])\]", TitleGroup, 1)
+			If (TitleGroupCheck == 0) {
+				; No current group found. Assign to group 0
+				Cluster[CurWin] := 0
+			} Else {
+				; Previous group found.  Assign it to previous group
+				Cluster[CurWin] := TitleGroup1
+			}
 		}
 	}
 
